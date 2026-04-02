@@ -11,6 +11,8 @@ namespace ToDoList.Data
         // Passo 1 Criar entidades (Models/Entities/Usuario)
         //Passo 2 'Criar o DbContext (Data/AppDbContext)
         public DbSet<Tarefa> Tarefas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
